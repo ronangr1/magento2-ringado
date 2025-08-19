@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Ronangr1. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="before.body.end">
+            <block name="ringado.widget" template="Ronangr1_Ringado::widget.phtml" ifconfig="ringado/general/enable">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Ronangr1\Ringado\ViewModel\Widget\Config</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

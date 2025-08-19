@@ -1,0 +1,21 @@
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Ronangr1\Ringado\ViewModel\Widget\Config $viewModel
+ */
+
+$viewModel = $block->getData('view_model');
+$operatorId = $viewModel->getOperatorId();
+$url = $viewModel->getWidgetUrl();
+?>
+
+<?php if($operatorId): ?>
+    <script
+        src="<?= $url ?>"
+        type="module"
+        crossorigin="anonymous"
+        data-operator-id="<?= $operatorId ?>"
+        nonce="nonce"
+    ></script>
+<?php endif; ?>

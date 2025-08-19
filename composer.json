@@ -1,0 +1,21 @@
+{
+    "name": "ronangr1/module-ringado",
+    "description": "",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ronangr1",
+            "email": "guerin.ronan@proton.me"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ronangr1\\Core\\": ""
+        }
+    }
+}
