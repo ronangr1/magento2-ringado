@@ -5,7 +5,7 @@
 [![Packagist](https://img.shields.io/packagist/dt/ronangr1/module-ringado.svg?style=flat-square)](https://packagist.org/packages/ronangr1/module-ringado/stats)
 [![Packagist](https://img.shields.io/packagist/dm/ronangr1/module-ringado.svg?style=flat-square)](https://packagist.org/packages/ronangr1/module-ringado/stats)
 
-This module enables you to integrate [https://ringado.com](Ringado) on Magento 2 applications.
+This module enables you to integrate [Ringado](https://ringado.com) on Magento 2 applications.
 
 - [Setup](#setup)
     - [Composer installation](#composer-installation)
@@ -33,6 +33,12 @@ Run the following magento command:
 ```
 bin/magento setup:upgrade
 ```
+
+Go to `Store > Configuration > Ronangr1 > Ringado`.
+
+Add your Operator ID - [Sign up](https://ringado.com/signup) if you're not registered.
+
+Enable the module.
 
 **If you are in production mode, do not forget to recompile and redeploy the static resources.**
 
