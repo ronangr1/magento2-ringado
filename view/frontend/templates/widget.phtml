@@ -8,6 +8,7 @@
 $viewModel = $block->getData('view_model');
 $operatorId = $viewModel->getOperatorId();
 $url = $viewModel->getWidgetUrl();
+$nonce = $viewModel->getNonce();
 ?>
 
 <?php if($operatorId): ?>
@@ -16,6 +17,6 @@ $url = $viewModel->getWidgetUrl();
         type="module"
         crossorigin="anonymous"
         data-operator-id="<?= $escaper->escapeHtmlAttr($operatorId) ?>"
-        nonce="<?= $escaper->escapeHtmlAttr('nonce') ?>"
+        nonce="<?= $escaper->escapeHtmlAttr($nonce) ?>"
     ></script>
 <?php endif; ?>
