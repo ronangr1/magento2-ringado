@@ -12,10 +12,10 @@ $url = $viewModel->getWidgetUrl();
 
 <?php if($operatorId): ?>
     <script
-        src="<?= $url ?>"
+        src="<?= $escaper->escapeUrl($url) ?>"
         type="module"
         crossorigin="anonymous"
-        data-operator-id="<?= $operatorId ?>"
-        nonce="nonce"
+        data-operator-id="<?= $escaper->escapeHtmlAttr($operatorId) ?>"
+        nonce="<?= $escaper->escapeHtmlAttr('nonce') ?>"
     ></script>
 <?php endif; ?>
